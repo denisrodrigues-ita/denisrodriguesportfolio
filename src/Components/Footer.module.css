@@ -1,0 +1,29 @@
+.footer {
+  background: rgb(15, 15, 43);
+  background: linear-gradient(90deg, rgba(15, 15, 43, 1) 26%, rgba(23, 19, 56, 1) 72%);
+  display: grid;
+  padding-top: 3rem;
+  height: 6rem;
+  color: #fff;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer div {
+  margin: auto;
+}
+
+.footer svg {
+  width: 2rem;
+  height: 2rem;
+  padding: 0 1rem;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}

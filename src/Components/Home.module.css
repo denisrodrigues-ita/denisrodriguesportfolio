@@ -1,0 +1,166 @@
+.home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+  height: 40rem;
+}
+
+.home h1 {
+  display: inline-block;
+  padding-top: 1rem;
+  border-bottom: #e32577 2px solid;
+  box-sizing: border-box;
+}
+
+.home p {
+  text-align: center;
+  padding: 1rem 1rem 0 1rem;
+  line-height: 1.6;
+}
+
+button {
+  padding: .6rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  background-color: #e32577;
+  border: none;
+  color: #fff;
+  border-radius: .5rem;
+}
+
+.grid1 {
+  background: rgb(16, 15, 46);
+  background: linear-gradient(90deg, rgba(16, 15, 46, 1) 0%, rgba(55, 19, 62, 1) 90%);
+  object-fit: cover;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-radius: .5rem;
+  background-color: #201750;
+  height: 40rem;
+  text-align: center;
+}
+
+.grid1 svg {
+  height: 20rem;
+  width: 100%;
+}
+
+.grid2 {
+  background: rgb(55, 19, 62);
+  background: linear-gradient(24deg, rgba(55, 19, 62, 1) 0%, rgba(25, 16, 50, 1) 19%, rgba(21, 16, 48, 1) 75%, rgba(55, 19, 62, 1) 100%);
+  object-fit: cover;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-radius: .5rem;
+  background-color: #201750;
+  height: 40rem;
+  text-align: center;
+}
+
+.grid2 svg {
+  height: 20rem;
+  width: 100%;
+}
+
+.grid3 {
+  background: rgb(55, 19, 62);
+  background: linear-gradient(90deg, rgba(55, 19, 62, 1) 10%, rgba(16, 15, 46, 1) 100%);
+  object-fit: cover;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-radius: .5rem;
+  background-color: #201750;
+  height: 40rem;
+  text-align: center;
+}
+
+.grid3 svg {
+  height: 20rem;
+  width: 100%;
+}
+
+@media (max-width: 1014px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .grid1 {
+    grid-template-columns: 1fr 1fr;
+    height: 20rem;
+    width: auto;
+    text-align: center;
+  }
+
+  .grid1 svg {
+    height: 20rem;
+    width: 100%;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr 1fr;
+    height: 20rem;
+    width: auto;
+    text-align: center;
+  }
+
+  .grid2 svg {
+    height: 20rem;
+    width: 100%;
+  }
+
+  .grid3 {
+    grid-template-columns: 1fr 1fr;
+    height: 20rem;
+    width: auto;
+    text-align: center;
+  }
+
+  .grid3 svg {
+    height: 20rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: auto;
+  }
+
+  .grid1 svg {
+    padding: 0;
+    margin: auto;
+    top: 0;
+  }
+
+  .grid2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: auto;
+  }
+
+  .grid2 svg {
+    padding: 0;
+    margin: auto;
+    top: 0;
+  }
+
+  .grid3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: auto;
+  }
+
+  .grid3 svg {
+    padding: 0;
+    margin: auto;
+    top: 0;
+  }
+}

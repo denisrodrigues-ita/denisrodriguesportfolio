@@ -1,0 +1,47 @@
+.sobre {
+  padding: 1rem 0;
+}
+
+.sobre>div {
+  background: rgb(15, 15, 43);
+  background: linear-gradient(90deg, rgba(15, 15, 43, 1) 26%, rgba(23, 19, 56, 1) 72%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.sobre div p {
+  line-height: 1.6;
+}
+
+.gridRow1{
+  background: url('../../img/tile_background.png');
+}
+
+
+@media (max-width: 1014px) {
+  .sobre>div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .gridRow1 div {
+    max-width: 18rem;
+  }
+
+  .gridRow2 {
+    grid-row: 1;
+  }
+
+  .sobre p {
+    text-align:justify;
+  }
+}
+
+@media (max-width: 300px) {
+  .gridRow1 div {
+    max-width: 15rem;
+  }
+}

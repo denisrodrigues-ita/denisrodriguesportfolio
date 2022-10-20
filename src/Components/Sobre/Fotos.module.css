@@ -1,0 +1,19 @@
+.fotos {
+  width: 30rem;
+  height: 20rem;
+  margin: auto;
+}
+
+.fotos>div {
+  margin: auto;
+}
+
+.fotos img {
+  max-height: 20rem;
+  max-width: 20rem;
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

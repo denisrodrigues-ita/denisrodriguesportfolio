@@ -1,0 +1,105 @@
+a {
+  text-decoration: none;
+}
+
+.portfolio {
+  padding: 1rem 0;
+}
+
+.portfolio>div {
+  border-radius: .5rem;
+  background: url('../../img/tile_background.png');
+}
+
+.portfolio img {
+  width: 20rem;
+  background-size: cover;
+  border-radius: .5rem;
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.cardP {
+  padding: .5rem .1rem;
+  width: 20rem;
+  height: auto;
+}
+
+.cardP p {
+  color: #fff;
+}
+
+.a {
+  border-radius: .5rem;
+  width: 20rem;
+  outline: 1px solid #fff;
+  background: rgb(15, 15, 43);
+  background: linear-gradient(90deg, rgba(15, 15, 43, 1) 26%, rgba(23, 19, 56, 1) 72%);
+}
+
+.grid {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+
+@media (max-width: 1014px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem .1rem;
+    padding: 1rem .1rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem .1rem;
+    padding: 1rem .1rem;
+  }
+
+  .a {
+    width: 18rem;
+  }
+
+  .cardP {
+    width: 18rem;
+  }
+
+  .portfolio img {
+    width: 18rem;
+  }
+
+  .card {
+    width: 18rem;
+  }
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fff #e32577;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 0 5rem 0 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e32577;
+  border-radius: 1.5rem;
+  border: 3px solid #fff;
+}

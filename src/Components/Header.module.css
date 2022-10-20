@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  background: url('../img/Vector_2646.jpg') center center;
+  background-size: cover;
+  padding: 1rem;
+  box-sizing: border-box;
+  height: 20rem;
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.menu {
+  display: flex;
+  gap: .5rem;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: .5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  outline: 1px solid #fff;
+}
+
+.btnMenu {
+  display: none;
+}
+
+@media (max-width: 1014px) {
+  .header {
+    height: 16rem;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 4.2rem;
+    background: #e32577;
+    text-align: center;
+    width: 100%;
+    border-radius: .5rem;
+    z-index: 1;
+  }
+
+  .menu a {
+    border-bottom: 1px #fff solid;
+  }
+
+  .btnMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .active {
+    display: block;
+  }
+}
