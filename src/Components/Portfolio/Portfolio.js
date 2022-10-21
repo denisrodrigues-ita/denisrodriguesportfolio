@@ -31,7 +31,7 @@ const estrutura = [
     url: 'https://denisrodrigues-ita.github.io/lucas-personal/',
     img: LucasPersonal,
     alt: 'Site do lucas personal',
-    description: 'Projeto pessoal feito para meu primo personal trainer.'
+    description: 'Projeto pessoal feito para meu primo personal trainer usando localização do google maps e video do youtube.'
   },
   {
     url: 'https://projeto-curso-udemy.netlify.app/',
@@ -43,7 +43,7 @@ const estrutura = [
     url: 'https://denisrodrigues-ita.github.io/animais-fantasticos/',
     img: AnimaisFantasticos,
     alt: 'Projeto de página usando javascript',
-    description: 'Projeto em de página em html, css e javascript do curso origamid, onde usei manipulações do DOM e requisições via Fetch API.'
+    description: 'Projeto de página em html, css e javascript do curso origamid, onde usei manipulações do DOM e requisições via Fetch API.'
   },
   {
     url: 'https://dogs-and-cats.netlify.app/',
@@ -60,14 +60,14 @@ const Portfolio = () => {
 
         {estrutura.map((item, index) => (
           <div className={styles.a} key={index}>
-            <a href={item.url} target="_blank" rel="noreferrer">
-              <div className={styles.card}>
-                <img src={item.img} alt={item.alt} />
-              </div>
-              <div className={styles.cardP}>
-                <p>{item.description}</p>
-              </div>
-            </a>
+
+            <div className={styles.card}>
+              <img src={item.img} alt={item.alt} />
+            </div>
+            <div className={styles.cardP}>
+              <p>{item.description}</p>
+              <button><a href={item.url} target="_blank" rel="noreferrer">Ver mais.</a></button>
+            </div>
           </div>
         ))}
 
