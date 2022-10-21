@@ -5,11 +5,14 @@
 .contato>div {
   background: rgb(15, 15, 43);
   background: linear-gradient(90deg, rgba(15, 15, 43, 1) 26%, rgba(23, 19, 56, 1) 72%);
-  border-radius: .5rem;
   padding: 1rem;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  justify-items: center;
+}
+
+.contato>div>div {
+  margin: auto;
 }
 
 .content a {
@@ -18,6 +21,7 @@
   width: 30rem;
   outline: 1px #fff solid;
   line-height: 1.3;
+  border-radius: .5rem;
 }
 
 .content svg {
@@ -26,6 +30,10 @@
 }
 
 @media (max-width: 1014px) {
+  .contato>div {
+    grid-template-columns: 1fr;
+  }
+
   .content a {
     padding-bottom: 1rem;
     flex-wrap: wrap;
