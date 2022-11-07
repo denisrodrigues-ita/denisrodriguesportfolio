@@ -7,6 +7,7 @@ import LucasPersonal from '../../img/imgPortfolio/lucaspersonal.png';
 import ProjetoFinalUdemy from '../../img/imgPortfolio/projeto-final-curso-udemy.png';
 import AnimaisFantasticos from '../../img/imgPortfolio/animaisFantasticos.png';
 import Dogs from '../../img/imgPortfolio/dogs.png';
+import netCine from '../../img/imgPortfolio/netcine.vercel.app_.png';
 
 const estrutura = [
   {
@@ -50,6 +51,12 @@ const estrutura = [
     img: Dogs,
     alt: 'Projeto de página usando react',
     description: 'Projeto de página em react do curso origamid, uma rede social de cachorros, onde requisições via fetch API, hooks, react router, lazy loading, entre outros.'
+  },
+  {
+    url: 'https://netcine.vercel.app/',
+    img: netCine,
+    alt: 'Projeto de página usando react',
+    description: 'Projeto pessoal de página em react, onde há requisições via fetch API, hooks, react router, components, entre outros.'
   }
 ]
 
